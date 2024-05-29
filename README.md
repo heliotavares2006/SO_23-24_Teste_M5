@@ -10,7 +10,7 @@ Quando acabares, carrega no botão "Commit Changes".
 
 ## Informação do aluno
 
-    Nome: ...
+    Nome: ...Hélio Cesar Miranda Tavares
 
 ## P1 - Para as seguintes questões, assinala a opção correta: (2.5v)
 
@@ -21,7 +21,7 @@ Quando acabares, carrega no botão "Commit Changes".
     C) chmod +r script.sh
     D) chmod -r script.sh
     
-    Resposta: ...
+    Resposta: ... C) chmod +r script.sh
 
   2. Como se define um comentário num script Bash?
 
@@ -30,7 +30,7 @@ Quando acabares, carrega no botão "Commit Changes".
     C) # comentário
     D) -- comentário
     
-    Resposta: ...
+    Resposta: ...  C) # comentário
    
   3. Que comando é usado para adicionar uma linha de texto ao final de um arquivo em Bash?
 
@@ -39,7 +39,7 @@ Quando acabares, carrega no botão "Commit Changes".
     C) echo "texto" | arquivo
     D) echo "texto" >> arquivo
     
-    Resposta: ...
+    Resposta: ...D) echo "texto" >> arquivo
 
   4. Qual é o comando usado para ler a entrada do utilizador num script Bash?
 
@@ -48,7 +48,7 @@ Quando acabares, carrega no botão "Commit Changes".
     C) get
     D) scan
     
-    Resposta: ...
+    Resposta: ... A) read
 
   5. Que símbolo é usado para denotar uma variável em Bash?
 
@@ -57,24 +57,35 @@ Quando acabares, carrega no botão "Commit Changes".
     C) &
     D) #
     
-    Resposta: ...
+    Resposta: ...B) $
 
 ## P2 - Escreve scripts em Bash para realizar as seguintes instruções: (7.5v)
 
   1. Exibir a mensagem "Olá, Mundo!" no terminal.
 
     Resposta:
-    ...
+    ... echo "Olá, Mundo!"
     
   2. Receber dois números como entrada, e exibir a soma dos dois.
 
     Resposta:
-    ...
+    ...num1=7
+    num2=9
+    resultado=$((num1 + num2))
+    echo "A soma é: $resultado"
 
   3. Ler um valor numérico e imprimir uma mensagem a informar se o mesmo é par ou ímpar.
 
     Resposta:
     ...
+    Resposta:
+    num=13
+    if [num%2=0]
+    then
+        echo "O valor númerico é par."
+    elif [num%2!=0]
+        echo "O valor númerico é ímpar."
+    fi
 
 ## P3 - Indica o que é realizado pelas seguintes instruções: (6v)
 
@@ -83,7 +94,7 @@ Quando acabares, carrega no botão "Commit Changes".
     echo "scale=2;22/7" | bc
 
     Resposta:
-    ...
+    ... Esse código define o número de casas décimais que o número pode ter. O bc é uma calculadora que faz cálculos mais complexos.
      
   2. 
     
@@ -97,7 +108,7 @@ Quando acabares, carrega no botão "Commit Changes".
 
 
     Resposta:
-    ...
+    ... Esse programa está a fazer a soma dos número de 1 a 5.
 
   3. 
     
@@ -110,16 +121,24 @@ Quando acabares, carrega no botão "Commit Changes".
     done
 
     Resposta:
-    ...
+    ...Esse código imprime númeoros de 10 a 1.
+
 
 ## P4 - Realiza os seguintes exercícios, com respostas detalhadas: (4v)
 
   1. O que é um **shebang** (#!) e qual é a sua função num script?
 
     Resposta:
-    ...
+    ... **shebang** é a primeira linha de um script e indica à shell que o deve executar via bash shell.
 
   2. Como se utiliza a instrução 'if-else' num script Bash? Escreve um exemplo simples.
 
     Resposta:
-    ...
+    ... if [ condição ]
+        # Faz alguma coisa
+    elif [ condição ]; then
+        # Faz outra coisa
+    else
+        do # Faz algo por predefinição
+    fi
+
